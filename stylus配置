@@ -1,0 +1,15 @@
+要想使用stylus 必须分别安装
+cnpm install stylus  --stylus组件
+cnpm install stylus-loader 
+cnpm install  css-loader
+cnpm install style-loader
+必须在style标签指明接下来的css样式是那一种语言
+<style lang='stylus' ref='stylesheet/stylus'>
+</style>
+
+vertical-align
+要诀 在父级内先看文本高还是子元素高
+谁高谁就不动，矮的作出调整
+text-top 与文本的顶端对齐(文本矮时，文本把自己的顶端与行内元素的顶端对齐，文本高时，行内元素把子级的顶端与文本顶端对齐)
+text-bottom 与文本的底端对齐(同理)
+middle 行内元素高时文本中分线对齐元素中分线  文本高时 元素中分线与文本中分线大概对齐(=.=没办法到时手动跳帧)
